@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "test": "jest --watchAll --detectOpenHandles --forceExit ./app/tests/unit"
+    "test": "jest ./app/tests/unit"
   },
   "dependencies": {
     "next": "13.2.4",
