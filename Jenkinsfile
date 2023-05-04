@@ -23,6 +23,10 @@ pipeline {
         stage('Deliver') {
             steps {
                 echo 'Deliver....'
+                sh '''
+                npm install -g vercel
+                vercel --token z7Ew2AImlOpy8ZAgPsdpW5TM --prod
+                '''
             }
         }
     }
