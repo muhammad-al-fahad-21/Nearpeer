@@ -1,12 +1,13 @@
 {
-  "name": "CI/CD Pipeline",
+  "name": "next-13",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "test": "jest --watchAll --detectOpenHandles --forceExit ./app/tests/unit"
   },
   "dependencies": {
     "next": "13.2.4",
@@ -14,5 +15,8 @@
     "react-dom": "18.2.0",
     "react-icons": "^4.8.0",
     "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "jest": "^27.5.1"
   }
 }
